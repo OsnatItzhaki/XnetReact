@@ -18,7 +18,7 @@ function AlertMessage(props) {
   }
 
   return (
-    <Snackbar  anchorOrigin={{ vertical:"top", horizontal:"center" }} open={alertMessage.isOpen} autoHideDuration={2000} onClose={handleClose}>
+    <Snackbar  anchorOrigin={{ vertical:"top", horizontal:"center" }} open={alertMessage.isOpen} autoHideDuration={5000} onClose={handleClose}>
         <Alert onClose={handleClose} severity={alertMessage.status} sx={{ width: '100%' }}>
           {alertMessage.msg}
         </Alert>
